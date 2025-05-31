@@ -75,7 +75,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static('public'));
 
 const mongoose = require('mongoose');
-mongoose.connect('mongodb+srv://jyothirmaiganji:jyothirmai@todo.0za38eb.mongodb.net/todo')
+mongoose.connect('mongodb+srv://jyothirmaiganji:jyothirmai@todo.0za38eb.mongodb.net/ToDo')
 .then(() => console.log("Connected to MongoDB"))
 .catch(err => console.error("MongoDB connection arror:",err));
 
