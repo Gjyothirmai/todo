@@ -16,7 +16,7 @@ const trySchema = new mongoose.Schema({
 });
 const Item = mongoose.model('Task', trySchema);
 const task = new Item({
-    name: "Welcome to your smart task scheduler!"
+    name: "Welcome to your smart task scheduler"
 });
 
 
