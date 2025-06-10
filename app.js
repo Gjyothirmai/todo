@@ -15,7 +15,7 @@ const trySchema = new mongoose.Schema({
     name: String,
 });
 const Item = mongoose.model('Task', trySchema);
-const todo = new Item({
+const task = new Item({
     name: "Welcome to your smart task scheduler"
 });
 
@@ -33,10 +33,10 @@ app.get("/", function (_, res) {
 
 app.post("/", function (req, res) {
     const ItemName = req.body.ele1;
-    const todo = new Item({
+    const task = new Item({
         name: ItemName
     });
-    todo.save();
+    task.save();
     res.redirect("/");
 });
 
